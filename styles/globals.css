@@ -4,7 +4,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   body {
-    @apply bg-[#06202A] text-gray-300;
+    @apply bg-black-pearl text-gray-300;
   }
 }
