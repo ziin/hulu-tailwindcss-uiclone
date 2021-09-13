@@ -7,7 +7,7 @@ import { TMDB_IMAGE_BASE_PATH } from '../utils/tmdb'
 const Thumbnail = forwardRef<HTMLDivElement, Props>(({ movie }, ref) => (
   <div
     ref={ref}
-    className="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50"
+    className="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 select-none"
   >
     <Image
       src={`${TMDB_IMAGE_BASE_PATH}${movie.backdrop_path || movie.poster_path}`}
@@ -21,8 +21,7 @@ const Thumbnail = forwardRef<HTMLDivElement, Props>(({ movie }, ref) => (
       <h2 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">
         {movie.title || movie.name}
       </h2>
-      <p className="flex items-center visible group-hover:visible">
-        {movie.media_type && `${movie.media_type}`}{' '}
+      <p className="flex items-center invisible group-hover:visible">
         {movie.release_date || movie.first_air_date}
         <ThumbUpIcon className="h-5 mx-2" />
         {movie.vote_count}
