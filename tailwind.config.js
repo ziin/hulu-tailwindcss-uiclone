@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         'black-pearl': '#06202A',
       },
+      screens: {
+        '4k': '2000px',
+      },
     },
   },
   variants: {
