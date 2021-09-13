@@ -1,10 +1,10 @@
 import type { NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
-import Header from './src/components/Header'
-import Nav from './src/components/Nav'
-import Results from './src/components/Results'
-import requests, { Response } from './src/utils/requests'
-import { getFromTMDB } from './src/utils/tmdb'
+import Header from '../src/components/Header'
+import Nav from '../src/components/Nav'
+import Results from '../src/components/Results'
+import requests, { Response } from '../src/utils/requests'
+import { getFromTMDB } from '../src/utils/tmdb'
 
 const Home: NextPage<Props> = ({ results }) => {
   return (

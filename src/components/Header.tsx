@@ -9,6 +9,7 @@ import {
   LightningBoltIcon,
   CollectionIcon,
 } from '@heroicons/react/outline'
+
 function Header() {
   return (
     <header className="flex flex-col sm:flex-row justify-between items-center m-5 h-auto">
